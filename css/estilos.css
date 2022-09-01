@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?trshxe');
+  src:  url('../fonts/icomoon.eot?trshxe#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?trshxe') format('truetype'),
+    url('../fonts/icomoon.woff?trshxe') format('woff'),
+    url('../fonts/icomoon.svg?trshxe#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-x-square:before {
+  content: "\e905";
+}
+.icon-x:before {
+  content: "\e906";
+}
+.icon-tiktok:before {
+  content: "\e900";
+}
+.icon-whatsapp:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-instagram:before {
+  content: "\e903";
+}
+.icon-menu:before {
+  content: "\e904";
+}
+
+.body
+{
+  max-width: 1400px;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.hero
+{
+  align-items: center;
+  max-width: 1400px;
+  max-height: 120px;
+  flex-wrap: wrap;
+  background-image: url(../imagenes/fondoHeader.jpg);
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  top: 0px;
+  z-index: 4;
+  border-radius: 0px 12px 12px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hero-menu
+{
+  display: flex;
+  max-width: 1959px;
+  max-height: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  
+}
+.menu-contenedor
+{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  position: fixed;
+  left: 3px;
+}
+.navegacion-menu
+{
+  object-fit: contain;
+}
+.menu-imagen
+{
+  font-size:  1.6em;
+  margin: 0px 0px 0px 20px;
+  top: 0px;
+  z-index: 4;
+  color: black;
+}
+.logo-imagen
+{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+}
+.principal-imgen
+{
+  display: flex;
+  max-width: 1400px;
+  max-height: 200px;
+  justify-content: flex-end;
+  background-image: url(../imagenes/fondoHeader.jpg);
+  flex-wrap: wrap;
+  position: relative;
+  right: 0px;
+  left: 0px;
+  top: 92px;
+  justify-content: space-between;
+  border-radius: 0px 10px 10px 0px;
+}
+.principal-imgen figure img
+{
+  width: 250px;
+  position: relative;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+  left: -40px;
+  top: -15px;
+  margin-right: -95px;
+}
+.principal-imgen picture img
+{
+  width: 200px;
+  position: relative;
+  object-fit: contain;
+  align-items: center;
+  border-radius: 10px;
+}
+.principal-imgen div
+{
+  font-size: 15px;
+  text-align: center;
+  height: 100%;
+  margin-top: 3%;
+}
+.principal-imgen div p
+{
+  margin-left: 10px;
+  font-size: 1.5em;
+  align-items: center;
+}
+.logo-imagen picture img
+{
+  object-fit: contain;
+  height: 100px;
+  object-fit: contain;
+
+}
+.fondo-hero img
+{
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+.navegacio-menu ul
+{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  font-size: 1.6em;
+  background-image: url(/imagenes/fondoMenu.png);
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 90vw;
+  height: 50vh;
+  left: 0;
+  margin-left: 8px;
+  transition: .5s;
+
+}
+.navegacio-menu.deactivate ul
+{
+  
+  left: -1020vw;
+  transition: .5s;
+  
+}
+.navegacio-menu ul li
+{
+  list-style: none;
+  margin: auto;
+  
+}
+.navegacio-menu ul li a
+{
+  text-decoration: dashed;
+  color: black;
+}
+.menu-imagen.active span
+{
+  transition: .5s;
+  font-size: 1.6em;
+}
+.menu-imagen span
+{
+  transition: .5s;
+  font-size: 0em;
+}
+.icon-x
+{
+  transition: .5s;
+  font-size: 1.6em;
+
+}
+.icon-x.active
+{
+  transition: .5s;
+  font-size: 0em;
+}
+
+.sub-hero
+{
+  position: relative;
+  top: 110px;
+  display: flex;
+  justify-content: center
+}
+.sub-hero h1
+{
+  font-size: 2em;
+}
+.section-servicios
+{
+  position: relative;
+  top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-servicios h1
+{
+  width: 100%;
+}
+
+.titulo-servicios
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.descripcion-servicios 
+{
+  width: 40%;
+}
+.videos-servicios
+{
+  width: 40%;
+}
+.servicios-pestrados
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
