@@ -1,0 +1,25 @@
+.hero  {
+    padding-block-start: 16px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+
+  .hero-imagen figure {
+    margin: 0px;
+    overflow:hidden;
+    
+  }
+  .hero-imagen figure img{
+    margin: 5px 0px 0px 0px;
+    border-radius: 10px;
+    
+  }
+  
+
+ 
+  .hero  span{
+    font: var(--headline5);
+  }  
