@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css">
     <title>Portafolio</title>
 </head>
 <body  >
@@ -24,7 +27,7 @@
             <div class="navbar-collapse collapse col-sm-9" id="navbarCollapse" >
                 <ul class="navbar-nav px-4 ">
                     <li class="nav-item dropdown   d-lg-inline-block ">
-                        <a class="nav-link d-flex justify-content-end" id="homeDropdownMenuLink" href="#hero" "> inicio </a>
+                        <a class="nav-link d-flex justify-content-end" id="homeDropdownMenuLink" href="#hero" > inicio </a>
                     </li>
                     <li class="nav-item dropdown  d-lg-inline-block">
                         <a class="nav-link  d-flex justify-content-end" id="homeDropdownMenuLink" href="#Maquilaje_social" > Maquilajesocial </a>
@@ -41,18 +44,7 @@
                 </ul>
             </div>
 
-            <div>
-
-            </div>
         </nav>
-        
-           
-
-           
-                
-            
-       
-
 
     </header>
    
@@ -112,24 +104,68 @@
         </div>
     </section>
 
-    <footer id="fooder">
-        <div class="d-flex flex-wrap justify-content-between align-items-center px-3">
-            <div class="col-sm-3 d-flex flex-column">
-                <a class="text-decoration-none text-black" href="">Faceebok</a>
-                <a class="text-decoration-none text-black" href="">Linkedin</a>
-                <a class="text-decoration-none text-black" href="">Goggle+</a>
-            </div>
+    <footer class="main-footer py-5" id="fooder">
+        <div class="bg-gray-100 text-dark-700 py-6">
+            <div class="container ">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 service-column d-flex justify-content-evenly">
+                        <div class="">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="">
+                            <h6 class="text-uppercase">Maquillajes a domiciolios</h6>
+                            <p class="text-muted fw-light text-sm mb-0">  condiciones de el maquillajes a domiciolios</p>
+                        </div>
+                    </div>
 
-            <div class="col-sm-3 d-flex flex-column">
-              <address>
-                <p>Cl 16A #44-26, Pasto, Nariño</p> 
-                <small>+573235937401</small>
-              </address>
+                    <div class="col-lg-4 service-column d-flex justify-content-evenly">
+                        <div class="">
+                            <i class="fa-solid fa-money-bill"></i>
+                        </div>
+                        <div>
+                            <h6 class="text-uppercase">metodos de pago</h6>
+                            <p class="text-muted fw-light text-sm mb-0"> descripcion de los metodos de pago</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-              <div class="col-sm-3 d-flex flex-column ">
-              <a class="text-decoration-none text-black" href="">Notros</a>
-              <a class="text-decoration-none text-black" href="">precios</a>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center px-3 py-5 bg-gray-300 text-muted">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-3 d-flex px-3 row">
+                        <div>
+                            <P>logo</P>
+                        </div>
+                        <div>
+                            <a class="text-decoration-none text-black mx-1" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="text-decoration-none text-black mx-1" href=""><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="text-decoration-none text-black mx-1" href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+        
+                    <div class="col-sm-3 d-flex ">
+                      <address>
+                        <p><i class="fa-solid fa-location-dot padding-icon"></i>Cl 16A #44-26, Pasto, Nariño</p> 
+                        <p><i class="fa-solid fa-phone padding-icon"></i>+573235937401 </p>
+                      </address>
+                    </div>
+                    
+                    <div class="col-sm-4 d-flex flex-column ">
+                      <h6 class="text-uppercase text-dark mb-3">Contactarte</h6>
+                      <p class="mb-3">descripcion y terminos para contatarme</p>
+                      
+                      <form action="#" id="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" name="" id="" class="form-control bg-transparent border-secondary border-end-1" placeholder="direccion de gmail">
+
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary border-start-1" type="submit"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
