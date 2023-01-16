@@ -8,28 +8,57 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Portafolio</title>
 </head>
-<body>
-    <header class="header header-absolute ">
-        <div class="row d-flex align-items-center  h-100">
-            <div class="col-sm-4  d-sm-block ">
-                <P>logo</P>
+<body  >
+    <header class="header fixed-top  d-flex align-items-center  flex-wrap justify-content-between">
+        <nav class="navbar navbar-expand-lg container">
+            <div class="col-sm-3  d-sm-block">
+                <a class="nav-brand" href="#inicio">logo</a>
             </div>
-            <div class="col-sm-8 d-flex  ">
-                <nav>
-                    <ul class="">
-                        <li class=" px-2 border-start  d-sm-inline-block"><a href="" class="text-decoration-none text-black">Inicio</a></li>
-                        <li class=" px-2 border-start d-sm-inline-block"><a href="" class="text-decoration-none text-black">Maquillaje Social</a></li>
-                        <li class="px-2 border-start  d-sm-inline-block text-black"><a href="" class="text-decoration-none text-black">Maquillaje Quinseañera</a></li>
-                        <li class="px-2 border-start d-sm-inline-block text-black"><a href="" class="text-decoration-none text-black">Maquillaje Novia</a></li>
-                    </ul>
-                </nav>
+            <!---barara para pantallas inferiores a 996px-->
+            <div class="container-fluid d-flex justify-content-end">
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
             </div>
-        </div>
+            <div class="navbar-collapse collapse col-sm-9" id="navbarCollapse" >
+                <ul class="navbar-nav px-4 ">
+                    <li class="nav-item dropdown   d-lg-inline-block ">
+                        <a class="nav-link d-flex justify-content-end" id="homeDropdownMenuLink" href="#hero" "> inicio </a>
+                    </li>
+                    <li class="nav-item dropdown  d-lg-inline-block">
+                        <a class="nav-link  d-flex justify-content-end" id="homeDropdownMenuLink" href="#Maquilaje_social" > Maquilajesocial </a>
+                    </li>
+                    <li class="nav-item dropdown   d-lg-inline-block">
+                        <a class="nav-link d-flex justify-content-end " id="homeDropdownMenuLink" href="#Maquilaje_quinse"> Maquillaje Quinseañera </a>
+                    </li>
+                    <li class="nav-item dropdown  d-lg-inline-block">
+                        <a class="nav-link d-flex justify-content-end" id="homeDropdownMenuLink" href="#Maquilaje_novia" > Maquillaje Novia </a>
+                    </li>
+                    <li class="nav-item dropdown   d-lg-inline-block">
+                        <a class="nav-link d-flex justify-content-end " id="homeDropdownMenuLink" href="#fooder" > Contactos </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+
+            </div>
+        </nav>
+        
+           
+
+           
+                
+            
+       
+
+
     </header>
    
-    <section class="jumbotron hero ">
-        <div class="row ">
-            <div class="col-sm-8 py-sm-5  overlay-content">
+    <section class="jumbotron " id="hero">
+        <div class="d-flex w-100">
+            <div class="col-sm-8 py-sm-5 px-3">
                 <h1 class="text-uppercase  mb-3 letter-spacing-5">Bienvenidos </h1>
                 <h2 class="mb-3">a camii MakeUp</h2>
                 <p class="lead mb-4">donde la innovación se une a la tradición. Nuestra misión es ofrecer productos y servicios de alta calidad que superen sus expectativas.</p>
@@ -39,7 +68,7 @@
     
     <section class="py-7">
         <div class="container ">
-            <div class="row">
+            <div class="row" >
                 <div class="col-xl-8 mb-5">
                     <p class="text-uppercase text-muted fw-bold mb-1">¿Que ofrecemos? </p>
                     <h3>Llevando la belleza al siguiente nivel</h3>
@@ -47,8 +76,8 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-wrap  justify-content-between">
-                <div class="col-md-5 mb-4 mb-md-6 pt-lg-3 d-flex flex-column justify-content-between">
+            <div class="d-flex flex-wrap  justify-content-between" >
+                <div class="col-md-5 mb-4 mb-md-6 pt-lg-3 d-flex flex-column justify-content-between " id="Maquilaje_social">
                     <div>
                         <h4>Maquillaje Social</h4> 
                         <p class="">servicio de maquillaje profesional para eventos sociales. servicio prestado por maquilladora profesionales con experiencia en crear una variedad de looks, desde naturales hasta elaborados. </p>
@@ -59,7 +88,7 @@
                     
                 </div>
 
-                <div class="col-md-5 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between">
+                <div class="col-md-5 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between" id="Maquilaje_quinse">
                     <div>
                         <h4>Maquillaje Quinseañera</h4>
                         <p>elegante y apropiado para la ocasión, una ocacion especial he inolvidable debes resaltar con un look especial</p>
@@ -70,7 +99,7 @@
                     
                 </div>
 
-                <div class="col-md-5 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between ">
+                <div class="col-md-5 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between " id="Maquilaje_novia">
                     <div>
                         <h4>Maquillaje Novia</h4>
                         <p>maquillaje de novia debe ser elegante y sofisticado, y debe complementar el atuendo de la novia y el estilo de la boda</p>
@@ -83,8 +112,8 @@
         </div>
     </section>
 
-    <footer >
-        <div class="d-flex flex-wrap justify-content-between align-items-center">
+    <footer id="fooder">
+        <div class="d-flex flex-wrap justify-content-between align-items-center px-3">
             <div class="col-sm-3 d-flex flex-column">
                 <a class="text-decoration-none text-black" href="">Faceebok</a>
                 <a class="text-decoration-none text-black" href="">Linkedin</a>
