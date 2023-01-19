@@ -11,3 +11,16 @@ footer {
 .padding-icon{
     padding-right: 10px;
 }
+
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.element-right{
+    float: right;
+}
+.content-aling-top{
+    padding-bottom: 0px;
+    padding-top: 50px;
+}
