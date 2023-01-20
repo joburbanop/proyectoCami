@@ -4,10 +4,15 @@
 .btn-color{
     background-color:  #e6e6e6;
 }
-
+.tips
+{
+    background-color: #ebdece70;
+    margin: 5% 0%;
+}
 footer {
     background-color:#ffbba8 ;
 }
+
 .padding-icon{
     padding-right: 10px;
 }
@@ -24,3 +29,15 @@ footer {
     padding-bottom: 0px;
     padding-top: 50px;
 }
+.float-whatsapp {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 99;
+  }
+  .carosel-center
+  {
+     
+    margin-bottom: 5%;
+  }
+ 

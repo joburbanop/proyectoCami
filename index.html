@@ -15,7 +15,8 @@
     <header class="header fixed-top  d-flex align-items-center  flex-wrap justify-content-between">
         <nav class="navbar navbar-expand-lg container">
             <div class="col-sm-3  d-sm-block">
-                <a class="nav-brand" href="#inicio">logo</a>
+                <a class="nav-brand"  data-toggle="tooltip" title="Te amo con todo mi corazon"  href="#inicio">logo</a>
+                
             </div>
             <!---barara para pantallas inferiores a 996px-->
             <div class="container-fluid d-flex justify-content-end">
@@ -30,7 +31,7 @@
                         <a class="nav-link d-flex justify-content-end" id="homeDropdownMenuLink" href="#hero" > inicio </a>
                     </li>
                     <li class="nav-item dropdown  d-lg-inline-block">
-                        <a class="nav-link  d-flex justify-content-end" id="homeDropdownMenuLink" href="#Maquilaje_social" > Maquilajesocial </a>
+                        <a class="nav-link  d-flex justify-content-end" id="homeDropdownMenuLink" href="#Maquilaje_social" > Maquilaje social </a>
                     </li>
                     <li class="nav-item dropdown   d-lg-inline-block">
                         <a class="nav-link d-flex justify-content-end " id="homeDropdownMenuLink" href="#Maquilaje_quinse"> Maquillaje Quinseañera </a>
@@ -39,8 +40,9 @@
                         <a class="nav-link d-flex justify-content-end" id="homeDropdownMenuLink" href="#Maquilaje_novia" > Maquillaje Novia </a>
                     </li>
                     <li class="nav-item dropdown   d-lg-inline-block">
-                        <a class="nav-link d-flex justify-content-end " id="homeDropdownMenuLink" href="#fooder" > Contactos </a>
+                        <a class="nav-link d-flex justify-content-end " id="homeDropdownMenuLink" href="#footer" >Contactos </a>
                     </li>
+                   
                 </ul>
             </div>
 
@@ -51,8 +53,8 @@
     <section class="jumbotron " id="hero">
         <div class="d-flex w-100  flex-wrap  justify-content-center">
             <div class="col-sm-6 d-flex flex-wrap align-content-center ">
-                <div>
-                    <h1 class="text-uppercase  mb-3 letter-spacing-5">Bienvenidos </h1>
+                <div >
+                    <h1 class="text-uppercase  mb-3 letter-spacing-5" >Bienvenidos </h1>
                     <h2 class="mb-3">a camii MakeUp</h2>
                 </div>
                 <p class="lead mb-4"><br> donde la innovación se une a la tradición. Nuestra misión es ofrecer productos y servicios de alta calidad que superen sus expectativas.</p>
@@ -78,7 +80,7 @@
             <div class="d-flex flex-wrap  justify-content-between" >
                 <div class="card shadow col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column justify-content-between " id="Maquilaje_social">
                     <div class="card-body row d-flex justify-content-center">
-                        <div class="col-md-6"> 
+                        <div class="col-md-6 d-flex flex-wrap align-content-center"> 
                             <h4 >Maquillaje Social</h4> 
                             <p>servicio de maquillaje profesional para eventos sociales. servicio prestado por maquilladora profesionales con experiencia en crear una variedad de looks, desde naturales hasta elaborados. </p>
                         
@@ -87,8 +89,14 @@
                         <div class="col-md-3 mb-3 ">
                             <img class="card-img-top  h-80 shadow" src="/imagenes/20220909_190148.jpg" alt="">
                         </div>
+                        
+                        
+                        <div class="col-md-6 collapse fade " id="maquillajeSocialMasInfomacion">
+                            <p>informacion adiconal</p>
+                        </div>
+                        
                         <div>
-                            <button class="btn btn-color">Mas informacion</button>
+                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeSocialMasInfomacion" aria-expanded="false" >Mas informacion</button>
                         </div>
                         
                     </div>
@@ -97,15 +105,18 @@
 
                 <div class="card shadow  col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between" id="Maquilaje_quinse">
                     <div class="card-body row d-flex justify-content-center">
-                        <div class="col-md-3 ">
+                        <div class="col-md-3 py-4">
                             <img  class="card-img-top h-80 shadow" src="/imagenes/20220909_190332.jpg" alt="">
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 mb-3 d-flex flex-wrap align-content-center">
                             <h4>Maquillaje Quinseañera</h4>
                             <p>elegante y apropiado para la ocasión, una ocacion especial he inolvidable debes resaltar con un look especial</p>
                         </div>
-                        <div class="">
-                            <button class="btn btn-color element-right ">Mas informacion</button>
+                        <div class="col-md-6 collapse fade text-center" id="maquillajeQuinceMasInfomacion">
+                            <p>informacion adiconal</p>
+                        </div>
+                        <div class="py-4">
+                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeQuinceMasInfomacion" aria-expanded="false" aria-controls="multicollapsse2">Mas informacion</button>
                         </div>
                     </div>
                     
@@ -113,16 +124,22 @@
 
                 <div class="card shadow col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between " id="Maquilaje_novia">
                     <div class="card-body row d-flex justify-content-center">
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-flex flex-wrap align-content-center">
                             <h4>Maquillaje Novia</h4>
                             <p>maquillaje de novia debe ser elegante y sofisticado, y debe complementar el atuendo de la novia y el estilo de la boda</p>
                         </div>
                         <div class="col-md-3 ">
                             <img class="card-img-top h-80 shadow" src="/imagenes/20220924_190033.jpg" alt="">
                         </div>
-                        <div>
-                            <button class="btn btn-color ">Mas informacion</button>
+                        
+                        <div class="col-md-6 collapse  fade" id="maquillajeNoviaInfomacion">
+                            <p>informacion adiconal</p>
                         </div>
+                        <div >
+                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeNoviaInfomacion" aria-expanded="false" >Mas informacion</button>
+                        </div>
+  
+
                     </div>
                 </div>
             </div>
@@ -131,11 +148,90 @@
 
     
     
-    <section >
-       
+    <section class=" tips" >
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 text-black text-center py-7">
+                    <h2 class="display-4 text-uppercase mb-4 ">TIPS DE MAQUILLAJE</h2>
+                    <p class="mb-0">aprende y mejora</p>
+                    <h2 class="display-1 fw-bold mb-3">GRATIS</h2>
+                    <p class="mb-5">* solo aqui con camii MakeUp</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <p>TIPS</p>
+                </div>
+
+            </div>
+
+            
+          </div>
+          
     </section>
 
-    <footer class="main-footer justify-content-end " style="padding-top: 50px;"" id="fooder">
+    <section class="" id="citas">
+        <div class="float-whatsapp fa-3x text-center">
+            <a href="https://wa.me/+53235937501?text=Hola deseo agendar una cita" target="_blank">
+              <i class="fab fa-whatsapp text-black fb"></i>
+            </a>
+          </div>
+          
+    </section>
+   
+
+    <section class=" ">
+        <div class="container ">
+            <div class="col-sm-12 col-md-12">
+                <div class="">
+                    <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="/imagenes/IMG-20220916-WA0213.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/imagenes/IMG-20220916-WA0179.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Second slide label</h5>
+                                  <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/imagenes/IMG-20220719-WA0046.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Third slide label</h5>
+                                  <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    
+
+    <footer class="main-footer justify-content-end " style="padding-top: 50px;" id="footer">
         <div class="bg-gray-100 text-dark-700 mb-5">
             <div class="container ">
                 <div class="row d-flex justify-content-center">
@@ -164,20 +260,10 @@
 
 
         <div class="container mb-5 ">
-            <h2>Sección de Comentarios</h2>
+            <h2>Comentarios</h2>
             
-            <form>
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre">
-                </div>
-                <div class="form-group">
-                    <label for="comentario">Comentario:</label>
-                    <textarea class="form-control" rows="5" id="comentario"></textarea>
-                </div>
-                <button type="submit" class=" btn btn-color ">Enviar</button>
-            </form>
-
+           
+            <!--estructura del una Tabla -->
             <table class="table py-2">
                 <thead>
                     <tr>
@@ -196,8 +282,39 @@
                     </tr>
                 </tbody>
             </table>
-            
-            
+
+              <!-- Button trigger modal -->
+            <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#realizarComentario" data-toggle="popover" title="Comentarios" data-content="deja tu opinion sobre la experiencia de el maquillaje con camii MakeUp">Comentar</button>
+
+              <!--estructura del Modal -->
+              <div class="modal fade" id="realizarComentario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Comentario</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="comentario">Comentario:</label>
+                                <textarea class="form-control" rows="5" id="comentario"></textarea>
+                            </div>
+                        
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-color" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-secondary">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
         </div>
 
         <div class="d-flex flex-wrap align-items-center px-3 bg-gray-300 text-muted content-aling-top">
@@ -208,9 +325,9 @@
                             <P>logo</P>
                         </div>
                         <div>
-                            <a class="text-decoration-none text-black mx-1" href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a class="text-decoration-none text-black mx-1" href=""><i class="fa-brands fa-tiktok"></i></a>
-                            <a class="text-decoration-none text-black mx-1" href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-tiktok"></i></a>
+                            <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
         
@@ -240,12 +357,25 @@
                 </div>
             </div>
         </div>
+
+        
+          
     </footer>
     
+    <!---Inicializa el plugin de "tooltip" en JavaScript-->
+    <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();  
+        $('[data-toggle="popover"]').popover();   
+        });
+
+    </script>
 
     
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+
 </body>
 </html>
