@@ -33,11 +33,16 @@ footer {
     position: fixed;
     bottom: 60px;
     right: 30px;
+    width: 80px;
+    height: 80px;
     z-index: 99;
   }
+
   .carosel-center
   {
      
     margin-bottom: 5%;
   }
- 
+ .text-color{
+    color: #ffffff;
+ }
