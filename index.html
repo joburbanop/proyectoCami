@@ -31,23 +31,23 @@
 
             <div class="navbar-collapse collapse col-sm-9" id="navbarCollapse" >
                 <ul class="navbar-nav px-4 ">
-                    <li class="nav-item dropdown   d-lg-inline-block ">
+                    <li class="nav-item dropdown   d-lg-inline-block   ">
                         <a class="nav-link d-flex justify-content-end"  href="#hero" > Inicio </a>
                     </li>
-                    <li class="nav-item dropdown  d-lg-inline-block">
+                    <li class="nav-item dropdown  d-lg-inline-block ">
                         <a class="nav-link  d-flex justify-content-end" href="#Maquilaje_social" > 
                             Social </a>
                     </li>
-                    <li class="nav-item dropdown   d-lg-inline-block">
+                    <li class="nav-item dropdown   d-lg-inline-block ">
                         <a class="nav-link d-flex justify-content-end " href="#Maquilaje_quinse">  Quinseañera </a>
                     </li>
-                    <li class="nav-item dropdown  d-lg-inline-block">
+                    <li class="nav-item dropdown  d-lg-inline-block " >
                         <a class="nav-link d-flex justify-content-end" href="#Maquilaje_novia" > Novia </a>
                     </li>
-                    <li>
+                    <li class="nav-item dropdown  d-lg-inline-block ">
                         <a class="nav-link d-flex justify-content-end" href=" ">Prueba </a>
                     </li>
-                    <li>
+                    <li class="nav-item dropdown  d-lg-inline-block ">
                         <a class="nav-link d-flex justify-content-end" href="">Cursos</a>
                     </li>
                     <li class="nav-item dropdown   d-lg-inline-block">
@@ -92,7 +92,7 @@
                     <div class="col-sm-0">
 
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta"  >Informacion para agendar cita</button>
+                      
     
                         <!--estructura del Modal -->
                         <div class="modal fade" id="masInformacionAgendamiento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -101,6 +101,7 @@
                               <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion </h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                
                               </div>
                               <div class="modal-body">
                                   <p class="lead text-muted">
@@ -109,6 +110,7 @@
                               </div>
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-color" data-bs-dismiss="modal">Cerrar</button>
+                                <a href="https://wa.me/+573157223969?text=Hola deseo agendar una cita" ><button type="button" class="btn btn-secondary">Agendar</button></a>
                                 
                               </div>
                             </div>
@@ -190,7 +192,7 @@
 
             <div class="row d-flex flex-wrap  justify-content-between" >
                 
-                <div class="card shadow col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column justify-content-between " id="Maquilaje_social">
+                <div class="card shadow col-md-12 mb-4 mb-md-6  d-flex flex-column justify-content-between padding-top" id="Maquilaje_social">
                     <div class="card-body row d-flex justify-content-center">
                         <div class="col-md-6 d-flex flex-wrap align-content-center"> 
                             <h4 >Maquillaje Social</h4> 
@@ -207,18 +209,21 @@
                             <h4>Incluye</h4>
                             <p class="lead text-muted">- Preparacion de piel. <br>- Pestañas postizas 3D, ten en cuenta que el precio se mantiene igual independientemente de si decides comprarlas o no. <br> <h4>Precio</h4> </p>
                             <p class="lead text-muted">$ 50.000 <br> Precio con prueba de maquillaje $ 70.000</p> 
+
+                            <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta"  >Agendar cita</button>
+
                         </div>
                         
                         <div>
-                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeSocialMasInfomacion" aria-expanded="false" >Mas informacion</button>
+                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeSocialMasInfomacion" aria-expanded="false" id="MasinformacionBTN1">Más Información</button>
                         </div>
                         
                     </div>
 
                 </div>
 
-                <div class="card shadow  col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between" id="Maquilaje_quinse">
-                    <div class="card-body row d-flex justify-content-center">
+                <div class="card shadow  col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between padding-top" id="Maquilaje_quinse">
+                    <div class="card-body row d-flex justify-content-center padding-top">
                         <div class="col-md-3 py-4">
                             <img  class="card-img-top h-80 shadow" src="/imagenes/20220909_190332.jpg" alt="">
                         </div>
@@ -228,9 +233,13 @@
                         </div>
                         <div class="col-md-6 collapse fade text-center" id="maquillajeQuinceMasInfomacion">
                             <p class="lead text-muted">informacion adiconal</p>
+
+
+                            <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta"  >Agendar cita</button>
+
                         </div>
                         <div class="py-4">
-                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeQuinceMasInfomacion" aria-expanded="false" aria-controls="multicollapsse2">Mas informacion</button>
+                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeQuinceMasInfomacion" aria-expanded="false" aria-controls="multicollapsse2" id="MasinformacionBTN2">Más Información</button>
                         </div>
                         
                     </div>
@@ -238,7 +247,7 @@
                 </div>
 
                 <div class="card shadow col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column  justify-content-between " id="Maquilaje_novia">
-                    <div class="card-body row d-flex justify-content-center">
+                    <div class="card-body row d-flex justify-content-center padding-top">
                         <div class="col-md-6 d-flex flex-wrap align-content-center">
                             <h4>Maquillaje Novia</h4>
                             <p class="lead text-muted">maquillaje de novia debe ser elegante y sofisticado, y debe complementar el atuendo de la novia y el estilo de la boda</p>
@@ -248,10 +257,14 @@
                         </div>
                         
                         <div class="col-md-6 collapse  fade" id="maquillajeNoviaInfomacion">
-                            <p class="lead text-muted">informacion adiconal</p>
+                            <p class="lead text-muted">Informacion adiconal</p>
+
+
+                            <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta"  >Agendar cita</button>
+
                         </div>
                         <div >
-                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeNoviaInfomacion" aria-expanded="false" >Mas informacion</button>
+                            <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeNoviaInfomacion" aria-expanded="false"  id="MasinformacionBTN3">Más Información</button>
                         </div>
   
 
@@ -320,11 +333,11 @@
                             </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carruselTips" data-bs-slide="prev">
                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Previous</span>
+                                  <span class="visually-hidden">Anteior</span>
                                 </button>
                                 <button class="carousel-control-next" type="button" data-bs-target="#carruselTips" data-bs-slide="next">
                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                  <span class="visually-hidden">Next</span>
+                                  <span class="visually-hidden">siguiente</span>
                                 </button>
                         </div>
                         
@@ -485,8 +498,8 @@
           
     </footer>
     
-    <!---Inicializa el plugin de "tooltip" en JavaScript-->
-
+   
+    <script src="/javaScript/Botones.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
