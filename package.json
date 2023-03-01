@@ -5,8 +5,19 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev\"",
     "dev": "lite-server",
-    "scss":"node-sass -o css/ css/"
+    "preminify:js": "mkdir -p dist/javaScript",
+    "preminify:css": "mkdir -p dist/css",
+    "clean": "rimraf dist",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "minify:img": "imagemin imagenesUtilizadas/* -o dist/imagenesUtilizadas",
+    "minify:js": "npm run preminify:js && terser javaScript/*.js -o dist/javaScript/main.min.js --compress --mangle",
+    "minify:css": "npm run preminify:css && usemin index.html -d  dist --htmlin -o dist/css/main.min.css",
+    "minify": "npm run minify:js && npm run minify:css",
+    "minify-html": "html-minifier --input-dir HTML --output-dir dist/HTML --file-ext html --collapse-whitespace --remove-comments && html-minifier --input-dir ./ --output-dir dist --file-ext html --collapse-whitespace --remove-comments",
+    "build": "npm run clean && npm run scss && npm run minify:img && npm run minify && npm run minify-html"
   },
   "repository": {
     "type": "git",
@@ -19,12 +30,22 @@
   },
   "homepage": "https://github.com/joburbanop/proyectoCami#readme",
   "devDependencies": {
+    "concurrently": "^7.6.0",
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "cssnano": "^5.1.15",
+    "html-minifier": "^4.0.0",
+    "htmlmin": "^0.0.7",
+    "imagemin": "^8.0.1",
     "lite-server": "^2.6.1",
-    "node-sass": "^8.0.0"
-  
+    "node-sass": "^8.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^4.1.2",
+    "terser": "^5.16.5",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@fortawesome/fontawesome-free": "^6.3.0",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1"

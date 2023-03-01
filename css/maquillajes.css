@@ -1,62 +1,26 @@
-@charset "UTF-8";
 @media (max-width: 580px) {
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 999;
-    background-color: #ffbba8; }
-    header .navbar {
-      padding-left: 0;
-      padding-top: -5%; }
-    header .logo {
-      width: 30%;
-      display: inline-block; }
-      header .logo img {
-        max-height: 100%;
-        max-width: 100%;
-        object-fit: contain; }
-    header .menu_amburgesa {
-      width: 30%;
-      display: inline-block;
-      text-align: right; }
-    header .navbar-collapse {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #ffbba8;
-      padding: 0;
-      transition: all 0.3s ease;
-      transform: translateY(-100%);
-      z-index: 2;
-      text-align: center; }
-      header .navbar-collapse .nav-item {
-        display: block;
-        padding: 10px 0;
-        border-bottom: 1px solid #ffbba8; }
-      header .navbar-collapse .nav-link {
-        display: block;
-        padding: 5px 10px; }
-    header .navbar-toggler {
-      display: inline-block;
-      margin-right: 0;
-      margin-left: auto;
-      border-color: transparent; } }
+  header .logo {
+    width: 20%;
+    display: inline-block; }
+    header .logo img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain; }
+  header .menu_amburgesa {
+    width: 30%;
+    display: inline-block;
+    text-align: right; }
+  header .navbar-collapse {
+    transition: all 0.3s ease;
+    margin-top: -2%;
+    background-color: #ffbba8;
+    padding-top: 0%; } }
 
-.navbar-collapse.collapse.show {
-  display: flex !important;
-  flex-basis: 100%;
-  flex-grow: 1;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-color: #ffbba8;
-  padding-top: 1rem;
-  margin-top: auto; }
+@media (max-width: 996px) {
+  .menu .menu {
+    justify-content: end; }
+  .padding-top {
+    padding-top: 25%; } }
 
 .logo {
   font-size: 2rem; }
@@ -107,15 +71,3 @@ footer {
 
 .padding-top {
   padding-top: 10%; }
-
-@media screen and (max-width: 588px) {
-  /* Definir el ancho del header */
-  .header {
-    height: 100px;
-    width: 100%; }
-  /* Ajustar tamaño del logo */
-  .logo img {
-    max-width: 80%; }
-  /* Ajustar tamaño del menú */
-  .navbar-collapse {
-    width: 100px; } }
