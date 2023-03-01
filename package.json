@@ -12,10 +12,9 @@
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "minify:img": "imagemin imagenesUtilizadas/* -o dist/imagenesUtilizadas",
-    "minify:js": "npm run preminify:dist && terser javaScript/*.js -o dist/main.min.js --compress --mangle",
-    "minify:css": "usemin index.html -d  dist --htmlin -o dist/index.html && usemin HTML/Cursos.html -d  dist --htmlin -o dist/Cursos.html",
-    "minify": "npm run minify:js && npm run minify:css",
-    "build": "npm run clean && npm run scss && npm run minify:img && npm run minify && npm run minify-html"
+    "usemin": "usemin  --htmlmin index.html -d dist -o dist/index.html && usemin --htmlmin HTML/Cursos.html -d dist -o dist/Cursos.html",
+    "minify": " npm run usemin",
+    "build": "npm run clean && npm run scss && npm run minify:img && npm run minify"
   },
   "repository": {
     "type": "git",
@@ -32,9 +31,12 @@
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
     "cssnano": "^5.1.15",
+    "grunt": "^1.6.1",
+    "grunt-contrib-sass": "^2.0.0",
     "html-minifier": "^4.0.0",
     "htmlmin": "^0.0.7",
     "imagemin": "^8.0.1",
+    "liftup": "^3.0.1",
     "lite-server": "^2.6.1",
     "node-sass": "^8.0.0",
     "onchange": "^7.1.0",
@@ -46,6 +48,7 @@
     "@fortawesome/fontawesome-free": "^6.3.0",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "usemin": "^0.6.0"
   }
 }
