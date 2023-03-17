@@ -1,384 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        
-        <!-- build:css css/index.css -->
-        
-        <link rel="stylesheet" href="/css/index.css" />
-        <!--endbuild-->
-        
-        <title>Portafolio</title>
-    </head>
-    <body>
-        <header class="header fixed-top d-flex align-items-center flex-wrap justify-content-between">
-            <nav class="navbar navbar-expand-lg container">
-                <div class="col-sm-3 d-sm-block logo">
-                    <a class="nav-brand" data-toggle="tooltip" title="Camii MakeUp" href="#hero"><img class="img-fluid" src="/imagenesUtilizadas/logo.png" alt="logo" /></a>
-                </div>
-                <div class="d-flex justify-content-end w-10 justify-content-end menu_amburgesa">
-                    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse col-sm-9 justify-content-end menu" id="navbarCollapse">
-                    <ul class="navbar-nav px-4">
-                        <li class="nav-item dropdown d-lg-inline-block justify-content-end"><a class="nav-link d-flex justify-content-end" id="navbar-list" href="#hero">Inicio</a></li>
-                        <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list2" href="#Maquilaje_social">Social</a></li>
-                        <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list3" href="#Maquilaje_quinse">Quinceañera</a></li>
-                        <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list4" href="#Maquilaje_novia">Novia</a></li>
-                        <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list5" href="#prueba">Prueba</a></li>
-                        <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list6" href="/HTML/Cursos.html">Cursos</a></li>
-                        <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list7" href="#footer">Contactos</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <section class="jumbotron" id="hero">
-            <div class="d-flex w-100 mb-5 flex-wrap justify-content-center contenido">
-                <div class="col-sm-6 d-flex flex-wrap align-content-center">
-                    <div>
-                        <h1 class="text-uppercase mb-3 letter-spacing-5">Bienvenidos</h1>
-                        <h2 class="mb-3">a camii MakeUp</h2>
-                    </div>
-                    <p class="lead mb-4">
-                        <br />
-                        Donde hay un esfuerzo continuo por mantenerme actualizada con las últimas tendencias y técnicas de maquillaje. Explora nuestra página web y no dudes en contactarnos.<br />
-                        <strong>¡Esperamos que disfrutes de tu tiempo aquí!</strong>
-                    </p>
-                </div>
-                <div class="col-sm-4 bg-image mb-2"><img class="card-img-top rounded-circle" src="imagenesUtilizadas/Polish_20230222_203018811.png" alt="" /></div>
-            </div>
-        </section>
-        <section class="py-7">
-            <div class="container">
-                <div class="row d-flex flex-wrap justify-content-between py-4">
-                    <div class="col-sm-5 mb-5 py-5 px-3">
-                        <div>
-                            <p class="text-uppercase text-muted fw-bold mb-1">¿Que ofrecemos?</p>
-                            <h3>Llevando la belleza al siguiente nivel</h3>
-                            <p class="lead text-muted">La belleza no tiene límites. Te brindo una amplia gama de servicios de maquillaje personalizados para cada ocasión y tipo de piel, con un enfoque en la innovación y la excelencia.</p>
-                        </div>
-                        <div class="col-sm-0">
-                            <div class="modal fade" id="masInformacionAgendamiento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion para agendar citas</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p class="lead text-muted">
-                                                - Las citas solo se agendan con el 50% del precio total del maquillaje.<br />
-                                                <br />
-                                                - De no asistir a su cita NO será devuelto el anticipo.<br />
-                                                <br />
-                                                - El tiempo de espera será máximo de 15 minutos, de lo contrario se cancela su cita y el anticipo NO sera devuelto.<br />
-                                                <br />
-                                                - Si se informa el dia anterior (24 horas) antes de su cita, que no podrá asistir, tendrá la posibilidad de reprogramar la cita con el mismo anticipo.<br />
-                                                <br />
-                                                - Los domicilios solo se realizáran aparatir de dos clientas, para maquillaje social. Recuerda solicitarlo oportunamente para ver disponibilidad del mismo (valor $ 20.000).<br />
-                                                <br />
-                                                - Asistir a su cita con el rostro libre de productos.<br />
-                                            </p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-color" data-bs-dismiss="modal">Cerrar</button>
-                                            <a href="https://wa.me/+573157223969?text=Hola deseo agendar una cita" target="_blank"><button type="button" class="btn btn-secondary" >Agendar</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-md-5">
-                        <div class="">
-                            <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
-                                <div id="caroulserFotos" class="carousel slide">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#caroulserFotos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#caroulserFotos" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#caroulserFotos" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="/imagenesUtilizadas/Polish_20230222_195645016.jpg" class="d-block w-100 rounded-circle" alt="imagen uno del carrusel de fotos" />
-                                            <div class="carousel-caption d-none d-md-block text-color">
-                                                <h5 class="color-black">Maquillaje de novia</h5>
-                                                <p>Un maquillaje especial para tu dia especial.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/imagenesUtilizadas/20220924_185844.jpg" class="d-block w-100 rounded-circle" alt="magen dos del carrusel de fotos" />
-                                            <div class="carousel-caption d-none d-md-block text-color">
-                                                <h5>Maquillaje de quinceañera</h5>
-                                                <p>Maquillaje ideal para lucir como una princesa.</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="/imagenesUtilizadas/IMG-20220719-WA0046.jpg" class="d-block w-100 rounded-circle" alt="magen tres del carrusel de fotos" />
-                                            <div class="carousel-caption d-none d-md-block text-color">
-                                                <h5>Maquilaje social</h5>
-                                                <p>Tienes una fiesta, alguna oaciaon especial, o simplente deseas resaltar tu belleza, este es tu tipo de maquillaje.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#caroulserFotos" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#caroulserFotos" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex flex-wrap justify-content-between">
-                    <div class="card shadow col-md-12 mb-4 mb-md-6 d-flex flex-column justify-content-between padding-top" id="Maquilaje_social">
-                        <div class="card-body row d-flex justify-content-center">
-                            <div class="col-md-6 d-flex flex-wrap align-content-center">
-                                <h4>Maquillaje Social</h4>
-                                <p class="lead text-muted">
-                                    servicio de maquillaje profesional para eventos sociales. Perfecto para ocaciones como tu cumpleaños, grados, cocteles, conciertos o cualquier dia que quieras resaltar tu belleza.<br />
-                                </p>
-                            </div>
-                            <div class="col-md-3 mb-3"><img class="card-img-top h-80 shadow" src="/imagenesUtilizadas/Polish_20230222_202207457.png" alt="" /></div>
-                            <div class="col-md-6 collapse fade" id="maquillajeSocialMasInfomacion">
-                                <h4>Incluye</h4>
-                                <p class="lead text-muted">
-                                    - Tiempo estimado de una hora y media.<br />
-                                    - Preparacion de piel.<br />
-                                    - Pestañas postizas 3D, ten en cuenta que el precio se mantiene igual independientemente de si decides colocarlas o no.<br />
-                                </p>
-                                <h4>Precio</h4>
-                                <p></p>
-                                <p class="lead text-muted">
-                                    $ 50.000<br />
-                                    Precio con prueba de maquillaje $ 70.000
-                                </p>
-                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta" >Agendar cita</button>
-                               
-                            </div>
-                            <div><button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeSocialMasInfomacion" aria-expanded="false" id="MasinformacionBTN1">Más Información</button></div>
-                        </div>
-                    </div>
-                    <div class="card shadow col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column justify-content-between padding-top" id="Maquilaje_quinse">
-                        <div class="card-body row d-flex justify-content-center padding-top">
-                            <div class="col-md-3 py-4"><img class="card-img-top h-80 shadow" src="/imagenesUtilizadas/Polish_20230222_201500892.png" alt="" /></div>
-                            <div class="col-md-6 mb-3 d-flex flex-wrap align-content-center">
-                                <h4>Maquillaje quinceañera</h4>
-                                <p class="lead text-muted">En esta fecha especial, donde celebras tus quince años, debes lucir aún más hermosa, me encargare de sacar provecho de tus mejores rasgos faciales.</p>
-                            </div>
-                            <div class="col-md-6 collapse justify-content-end" id="maquillajeQuinceMasInfomacion">
-                                <h4>Incluye:</h4>
-                                <p class="lead text-muted">
-                                    - Tiempo estimado de dos horas<br />
-                                    - Pestañas postizas 3D, ten en cuenta que el precio se mantiene igual independientemente de si decides colocarlas o no.<br />
-                                    - Mascarilla hidratante<br />
-                                    - Colágeno de ojos.<br />
-                                    - Detalle sopresa.<br />
-                                </p>
-                                <h4>Precio</h4>
-                                <p></p>
-                                <p class="lead text-muted">
-                                    $ 80.000<br />
-                                    Precio con prueba de maquillaje $ 100.000
-                                </p>
-                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta" target="_blank">Agendar cita</button>
-                            </div>
-                            <div class="py-4">
-                                <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeQuinceMasInfomacion" aria-expanded="false" aria-controls="multicollapsse2" id="MasinformacionBTN2">
-                                    Más Información
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card shadow col-md-12 mb-4 mb-md-6 pt-lg-3 d-flex flex-column justify-content-between" id="Maquilaje_novia">
-                        <div class="card-body row d-flex justify-content-center padding-top">
-                            <div class="col-md-6 d-flex flex-wrap align-content-center">
-                                <h4>Maquillaje Novia</h4>
-                                <p class="lead text-muted">El maquillaje de novia debe ser elegante y sofisticado, no pudes pasar desaparcebida en un día tan especial.</p>
-                            </div>
-                            <div class="col-md-3"><img class="card-img-top h-80 shadow" src="/imagenesUtilizadas/Polish_20230222_204708054.png" alt="" /></div>
-                            <div class="col-md-6 collapse fade" id="maquillajeNoviaInfomacion">
-                                <h4>Incluye:</h4>
-                                <p class="lead text-muted">
-                                    - Tiempo estimado de dos horas<br />
-                                    - Pestañas postizas 3D, ten en cuenta que el precio se mantiene igual independientemente de si decides colocarlas o no.<br />
-                                    - Mascarilla hidratante<br />
-                                    - Colágeno de ojos.<br />
-                                    - Detalle sopresa.<br />
-                                </p>
-                                <h4>Precio</h4>
-                                <p></p>
-                                <p class="lead text-muted">
-                                    $ 80.000<br />
-                                    Precio con prueba de maquillaje $ 100.000
-                                </p>
-                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta" target="_blank">Agendar cita</button>
-                            </div>
-                            <div><button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeNoviaInfomacion" aria-expanded="false" id="MasinformacionBTN3">Más Información</button></div>
-                        </div>
-                    </div>
-                    <div class="card shadow col-md-12 mb-4 mb-md-6 d-flex flex-column justify-content-between padding-top" id="prueba">
-                        <div class="card-body row d-flex justify-content-center">
-                            <div class="col-md-6 d-flex flex-wrap align-content-center">
-                                <h4>Prueba de maquillaje</h4>
-                                <p class="lead text-muted">En un dia importante debe estar segura de lucir hermosa, las preuebas de maquillaje son ideales para ver que es lo que mas te favorece.</p>
-                            </div>
-                            <div class="col-md-3 mb-3"><img class="card-img-top h-80 shadow" src="/imagenesUtilizadas/20230110_003433.jpg" alt="" /></div>
-                            <div class="col-md-6 collapse fade" id="maquillajePrueba">
-                                <h4>Incluye</h4>
-                                <p class="lead text-muted">- Maquillaje diferente en cada ojo, con el resto de maquillaje en la piel.<br /></p>
-                                <h4>No incluye</h4>
-                                <p class="lead text-muted">
-                                    - Pestañas postizas.<br />
-                                    - No se realiza el mismo maquillaje en los dos ojos<br />
-                                    - No se hace domicilios
-                                </p>
-                                <br />
-                                <h4>Precio</h4>
-                                <p class="lead text-muted">$ 35.000</p>
-                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta" target="_blank">Agendar cita</button>
-                            </div>
-                            <div><button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajePrueba" aria-expanded="false" id="MasinformacionBTN4">Más Información</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cursos" id="curso">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-black text-center padding-top">
-                        <h2 class="display-4 text-uppercase mb-4">CURSOS DE MAQUILLAJE</h2>
-                        <p class="mb-0">aprende y mejora</p>
-                        <h2 class="display-1 fw-bold mb-3">PRECIOS ASEQUIBLES</h2>
-                        <a href="/HTML/Cursos.html"><button class="btn btn-color" type="button">*Mayor Información</button></a>
-                    </div>
-                    <div class="col-lg-6">
-                        <div><p class="display-5 text-center">TIPS DE MAQUILLAJE</p></div>
-                        <div id="carruserl2" class="carousel slide pointer-event" data-bs-ride="carousel">
-                            <div id="carruselTips" class="carousel slide">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carruselTips" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carruselTips" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carruselTips" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/imagenesUtilizadas/Polish_20230222_200750701.png" class="d-block w-100 rounded-circle" alt="imagen uno del carrusel de fotos" />
-                                        <div class="carousel-caption d-none d-md-block"><p>Para que tu piel se mire mas linda al maquillarla, recuerda realizar una hidratación correcta.</p></div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/imagenesUtilizadas/Polish_20230222_202242979.png" class="d-block w-100 rounded-circle" alt="magen dos del carrusel de fotos" />
-                                        <div class="carousel-caption d-none d-md-block"><p>Para que tus sombras pigmenten mejor, utiliza una prebase de sombra o un corrector de ojeras en el parpado.</p></div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="/imagenesUtilizadas/carrusel_3.jpg" class="d-block w-100 rounded-circle" alt="magen tres del carrusel de fotos" />
-                                        <div class="carousel-caption d-none d-md-block"><p>Sufres de rizo caido en las pestañas, utiliza pestañina a prueba de agua.</p></div>
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carruselTips" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Anteior</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carruselTips" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">siguiente</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="float-whatsapp" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tu cita " id="citas ">
-            <div class="w-100">
-                <a href="https://wa.me/+573157223969?text=Hola deseo agendar una cita" target="_blank"> <img src="/imagenesUtilizadas/whatsapp.png" class="img-fluid" alt=""></a>
-            </div>
-        </section>
-        <section></section>
-        <footer class="main-footer justify-content-end" style="padding-top: 50px;" id="footer">
-            <div class="container mb-5">
-                <h2>Comentarios</h2>
-                <table class="table py-2">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Comentario</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Juan</td>
-                            <td>excelencia y profesionalismo la caracterisa</td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>Estoy de acuerdo, es muy informativo.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#realizarComentario" data-toggle="tooltip" title="deja tu opinion sobre la experiencia de el maquillaje con camii MakeUp">Comentar</button>
-                <div class="modal fade" id="realizarComentario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Comentario</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group"><label for="nombre">Nombre:</label> <input type="text" class="form-control" id="nombre" /></div>
-                                    <div class="form-group"><label for="comentario">Comentario:</label> <textarea class="form-control" rows="5" id="comentario"></textarea></div>
-                                </form>
-                            </div>
-                            <div class="modal-footer"><button type="button" class="btn btn-color" data-bs-dismiss="modal">Cerrar</button> <button type="button" class="btn btn-secondary">Enviar</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex flex-wrap align-items-center px-3 bg-gray-300 text-muted content-aling-top">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-3 d-flex px-3 row">
-                            <div><img class="img-fluid w-10" src="/imagenesUtilizadas/logo.png" alt="" /></div>
-                            <div>
-                                <a class="text-decoration-none text-black mx-1 fa-2x" href="https://www.facebook.com/people/Camii-Makeup/100089206144971/?mibextid=ZbWKwL" target="_blank"> <img src="/imagenesUtilizadas/facebook.png" class="img-fluid w-25 " alt=""> </a>
-                                 <a class="text-decoration-none text-black mx-1 fa-2x" href="https://www.tiktok.com/@camiirualesmakeup?_t=8aj31BI1wRR&_r=1" target="_blank"> <img src="/imagenesUtilizadas/tik-tok.png" class="img-fluid w-25 " alt=""> </a>
-                                <a class="text-decoration-none text-black mx-1 fa-2x" href="https://www.instagram.com/camiiruales/" target="_blank"> <img src="/imagenesUtilizadas/instagram.png" class="img-fluid w-25 " alt=""> </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 d-flex">
-                            <address>
-                                <p><i class="fa-solid fa-location-dot padding-icon"></i>Cl 16A #44-26, Pasto, Nariño</p>
-                                <p><i class="fa-solid fa-phone padding-icon"></i>+573235937401</p>
-                            </address>
-                        </div>
-                        <div class="col-sm-4 d-flex flex-column">
-                            <h6 class="text-uppercase text-dark mb-3">Contactarte</h6>
-                            <p class="mb-3">descripcion y terminos para contatarme</p>
-                            <form action="#" id="newsletter-form">
-                                <div class="form-row">
-                                    <div class="input-group mb-3 form-group">
-                                        <input type="email" name="" id="email" class="form-control bg-transparent border-secondary border-end-1" placeholder="direccion de gmail" />
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-secondary border-start-1" type="submit"><i class="fa fa-paper-plane text-lg text-dark"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-     <!-- build:js js/main.js -->
- 
-    <script src="/js/main.js"></script>
-<!-- endbuild-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-    </body>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.18.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.18.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.18.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
