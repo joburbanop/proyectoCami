@@ -4,15 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-         <!-- build:css css/index.css -->
-         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
-         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
-         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
-         <link rel="stylesheet" href="/css/maquillajes.css" />
-         <!--endbuild-->
-
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
+        <link rel="stylesheet" href="/css/maquillajes.css" />
         <title>Cursos</title>
     </head>
     <body>
@@ -78,7 +74,9 @@
                                 </p>
                                 <h4>Precio</h4>
                                 <p class="lead text-muted">$ 100.000<br /></p>
-                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta"><a class="nav-link" href="https://wa.me/+573157223969?text=Hola deseo mas infromacion sobre el curso de automaquillaje basico " target="_blank"> Contactar</a></button>
+                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta">
+                                    <a class="nav-link" href="https://wa.me/+573157223969?text=Hola deseo mas infromacion sobre el curso de automaquillaje basico" target="_blank">Contactar</a>
+                                </button>
                             </div>
                             <div><button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeSocialMasInfomacion" aria-expanded="false" id="MasinformacionBTN1">Más Información</button></div>
                         </div>
@@ -105,7 +103,9 @@
                                 <h4>Precio</h4>
                                 <p></p>
                                 <p class="lead text-muted">$ 100.000<br /></p>
-                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta"><a href="https://wa.me/+573157223969?text=Hola deseo mas infromacion sobre el curso de automaquillaje avanzado " class="nav-link" target="_blank"> Contactar</a> </button>
+                                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta">
+                                    <a href="https://wa.me/+573157223969?text=Hola deseo mas infromacion sobre el curso de automaquillaje avanzado" class="nav-link" target="_blank">Contactar</a>
+                                </button>
                             </div>
                             <div class="py-4">
                                 <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajeQuinceMasInfomacion" aria-expanded="false" aria-controls="multicollapsse2" id="MasinformacionBTN2">
@@ -166,13 +166,13 @@
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-sm-3 d-flex px-3 row">
-                            <div><img class="img-fluid w-10" src="/imagenesUtilizadas/logo.png" alt="" /></div>
-                            <div>
+                            <div class="centrar"><img class="img-fluid w-10" src="/imagenesUtilizadas/logo.png" alt="" /></div>
+                            <div class="centrar">
                                 <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-facebook"></i></a> <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-tiktok"></i></a>
                                 <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
-                        <div class="col-sm-3 d-flex">
+                        <div class="col-sm-3 d-flex centrar">
                             <address>
                                 <p><i class="fa-solid fa-location-dot padding-icon"></i>Cl 16A #44-26, Pasto, Nariño</p>
                                 <p><i class="fa-solid fa-phone padding-icon"></i>+573235937401</p>
@@ -196,14 +196,23 @@
                 </div>
             </div>
         </footer>
-        
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/javaScript/Botones.js"></script>
+        <script>
+            var menuItems = document.querySelectorAll(".navbar-nav li a");
 
-      <!-- build:js js/main.js -->
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/javaScript/Botones.js"></script>
-<!-- endbuild-->
-
-     
+            for (var i = 0; i < menuItems.length; i++) {
+                menuItems[i].addEventListener("click", function () {
+                    var navbarCollapse = document.getElementById("navbarCollapse");
+                    navbarCollapse.classList.remove("show");
+                    navbarCollapse.classList.add("shadow");
+                });
+            }
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector(".header");
+                header.classList.toggle("shadow", window.scrollY > 0);
+            });
+        </script>
     </body>
 </html>

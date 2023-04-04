@@ -15,12 +15,30 @@
     margin-top: -2%;
     background-color: #ffbba8;
     padding-top: 0%; } }
+
 @media (max-width: 996px) {
   .menu .menu {
     justify-content: end; }
-
   .padding-top {
-    padding-top: 25%; } }
+    padding-top: 25%; }
+  .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 250px;
+    padding-top: 60px;
+    overflow-y: auto;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    z-index: 9999; }
+  .navbar-collapse.show {
+    right: 0; } }
+
 .header {
   background-color: #ffbba8; }
 
@@ -89,5 +107,3 @@ footer {
 
 .padding-top {
   padding-top: 10%; }
-
-/*# sourceMappingURL=maquillajes.css.map */

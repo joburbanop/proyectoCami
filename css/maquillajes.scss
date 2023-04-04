@@ -22,6 +22,7 @@ $header-max-height-sm: 100px;
         max-width: 100%;
         object-fit: contain;
       }
+      
     }
   
     .menu_amburgesa {
@@ -50,6 +51,28 @@ $header-max-height-sm: 100px;
     }
     .padding-top{
       padding-top: 25%;
+    }
+
+    .centrar
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: -100%;
+      width: 250px;
+      padding-top: 60px;
+      overflow-y: auto;
+      background-color: #fff;
+      transition: all 0.4s ease;
+      z-index: 9999;
+    }
+    .navbar-collapse.show {
+      right: 0;
     }
   }
   .header {
@@ -143,3 +166,4 @@ footer {
  .padding-top{
     padding-top: 10%;
  }
+ 

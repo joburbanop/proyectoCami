@@ -5,18 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         
-        <!-- build:css css/index.css -->
+        <!-- build:css css/main.min.css -->
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
         <link rel="stylesheet" href="/css/maquillajes.css" />
-        <!--endbuild-->
+         <!-- /build -->
         
         <title>Portafolio</title>
     </head>
     <body>
+
+        
+        
         <header class="header fixed-top d-flex align-items-center flex-wrap justify-content-between">
+            
             <nav class="navbar navbar-expand-lg container">
                 <div class="col-sm-3 d-sm-block logo">
                     <a class="nav-brand" data-toggle="tooltip" title="Camii MakeUp" href="#hero"><img class="img-fluid" src="/imagenesUtilizadas/logo.png" alt="logo" /></a>
@@ -27,7 +31,7 @@
                     </button>
                 </div>
                 <div class="navbar-collapse collapse col-sm-9 justify-content-end menu" id="navbarCollapse">
-                    <ul class="navbar-nav px-4">
+                    <ul class="navbar-nav px-4 navbar-nav-scroll">
                         <li class="nav-item dropdown d-lg-inline-block justify-content-end"><a class="nav-link d-flex justify-content-end" id="navbar-list" href="#hero">Inicio</a></li>
                         <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list2" href="#Maquilaje_social">Social</a></li>
                         <li class="nav-item dropdown d-lg-inline-block"><a class="nav-link d-flex justify-content-end" id="navbar-list3" href="#Maquilaje_quinse">Quinceañera</a></li>
@@ -39,10 +43,12 @@
                 </div>
             </nav>
         </header>
+
+        
         <section class="jumbotron" id="hero">
             <div class="d-flex w-100 mb-5 flex-wrap justify-content-center contenido">
-                <div class="col-sm-6 d-flex flex-wrap align-content-center">
-                    <div>
+                <div class="col-sm-6 d-flex flex-wrap align-content-center centrar">
+                    <div >
                         <h1 class="text-uppercase mb-3 letter-spacing-5">Bienvenidos</h1>
                         <h2 class="mb-3">a camii MakeUp</h2>
                     </div>
@@ -55,6 +61,10 @@
                 <div class="col-sm-4 bg-image mb-2"><img class="card-img-top rounded-circle" src="imagenesUtilizadas/Polish_20230222_203018811.png" alt="" /></div>
             </div>
         </section>
+
+
+        
+
         <section class="py-7">
             <div class="container">
                 <div class="row d-flex flex-wrap justify-content-between py-4">
@@ -346,18 +356,20 @@
             <div class="d-flex flex-wrap align-items-center px-3 bg-gray-300 text-muted content-aling-top">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-sm-3 d-flex px-3 row">
-                            <div><img class="img-fluid w-10" src="/imagenesUtilizadas/logo.png" alt="" /></div>
-                            <div>
+                        <div class="col-sm-3 d-flex px-3 row ">
+                            <div class="centrar">
+                                <img class="img-fluid w-10" src="/imagenesUtilizadas/logo.png" alt="" />
+                            </div>
+                            <div class="centrar">
                                 <a class="text-decoration-none text-black mx-1 fa-2x" href="https://www.facebook.com/people/Camii-Makeup/100089206144971/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                                  <a class="text-decoration-none text-black mx-1 fa-2x" href="https://www.tiktok.com/@camiirualesmakeup?_t=8aj31BI1wRR&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                                 <a class="text-decoration-none text-black mx-1 fa-2x" href="https://www.instagram.com/camiiruales/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                         </div>
-                        <div class="col-sm-3 d-flex">
+                        <div class="col-sm-3 d-flex centrar">
                             <address>
                                 <p><i class="fa-solid fa-location-dot padding-icon"></i>Cl 16A #44-26, Pasto, Nariño</p>
-                                <p><i class="fa-solid fa-phone padding-icon"></i>+573235937401</p>
+                                <p><i class="fa-solid fa-phone padding-icon"></i>+573157223969</p>
                             </address>
                         </div>
                         <div class="col-sm-4 d-flex flex-column">
@@ -378,11 +390,29 @@
                 </div>
             </div>
         </footer>
-     <!-- build:js js/main.js -->
+   
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/javaScript/Botones.js"></script>
-<!-- endbuild-->
 
+    <script>
+        var menuItems = document.querySelectorAll('.navbar-nav li a');
+        
+        for (var i = 0; i < menuItems.length; i++) {
+          menuItems[i].addEventListener('click', function () {
+            var navbarCollapse = document.getElementById('navbarCollapse');
+            navbarCollapse.classList.remove('show');
+            navbarCollapse.classList.add('shadow')
+          });
+        }
+
+        window.addEventListener('scroll', function() {
+        var header = document.querySelector('.header');
+        header.classList.toggle('shadow', window.scrollY > 0);
+        });
+
+    </script>
+   
+  
     </body>
 </html>

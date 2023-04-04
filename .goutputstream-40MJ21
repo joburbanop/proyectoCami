@@ -14,8 +14,8 @@
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "minify:img": "imagemin imagenesUtilizadas/* -o dist/imagenesUtilizadas",
     "minify:js": "npm run preminify:dist && terser javaScript/*.js -o dist/javaScript/Botones.js --compress --mangle",
-    "minify-css": "npm run preminify:css && uglifycss css/maquillajes.css --output dist/css/maquillajes.css",
-    "minify": "npm run minify:js && npm run minify-css",
+    "minify:css": "uglifycss  css/*.css --output-dir  dist/css/style.min.css",
+    "minify": "npm run minify:js && npm run minify:css",
     "minify-html": "html-minifier --input-dir HTML --output-dir HTML --file-ext html --collapse-whitespace --remove-comments && html-minifier --input-dir ./ --output-dir dist --file-ext html --collapse-whitespace --remove-comments",
     "build": "npm run clean && npm run scss && npm run minify:img && npm run minify && npm run minify-html"
   },
@@ -33,6 +33,7 @@
     "concurrently": "^7.6.0",
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
+    "cssnano": "^5.1.15",
     "html-minifier": "^4.0.0",
     "htmlmin": "^0.0.7",
     "imagemin": "^6.1.0",
@@ -44,13 +45,11 @@
     "rimraf": "^4.1.2",
     "terser": "^5.16.5",
     "time-grunt": "^2.0.0",
-    "uglifycss": "^0.0.29",
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "bootstrap": "^5.2.3",
-    "clean-css": "^5.3.2",
     "jquery": "^3.6.3",
     "popper.js": "^1.16.1",
     "usemin": "^0.6.0"
