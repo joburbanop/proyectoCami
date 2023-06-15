@@ -39,7 +39,8 @@
           }
 
         }
-        function toggleInfo3() {
+      
+        function toggleInfo4() {
           if (infoBtn4.textContent === 'Más Información' ) {
             infoBtn4.textContent = 'Menos Información';
             //console.log(infoBtn3.textContent+'aqui arriba el if');
