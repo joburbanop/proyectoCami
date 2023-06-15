@@ -1,30 +1,37 @@
 @media (max-width: 580px) {
   header .logo {
     width: 20%;
-    display: inline-block; }
-    header .logo img {
-      max-height: 100%;
-      max-width: 100%;
-      object-fit: contain; }
+    display: inline-block;
+  }
+  header .logo img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
   header .menu_amburgesa {
     width: 30%;
     display: inline-block;
-    text-align: right; }
+    text-align: right;
+  }
   header .navbar-collapse {
     transition: all 0.3s ease;
     margin-top: -2%;
-    background-color: #ffbba8;
-    padding-top: 0%; } }
-
+    background-color: #fff;
+    padding-top: 0%;
+  }
+}
 @media (max-width: 996px) {
   .menu .menu {
-    justify-content: end; }
+    justify-content: end;
+  }
   .padding-top {
-    padding-top: 25%; }
+    padding-top: 25%;
+  }
   .centrar {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+  }
   .navbar-collapse {
     position: fixed;
     top: 0;
@@ -35,61 +42,79 @@
     overflow-y: auto;
     background-color: #fff;
     transition: all 0.4s ease;
-    z-index: 9999; }
+    z-index: 9999;
+  }
   .navbar-collapse.show {
-    right: 0; } }
-
+    right: 0;
+  }
+}
 .header {
-  background-color: #ffbba8; }
+  background-color: #ffbba8;
+}
 
 .img-fluid {
-  max-width: 50%; }
+  max-width: 50%;
+}
 
 .jumbotron {
   background-color: #ffbba8;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+}
 
 .contenido {
-  padding: 2%; }
+  padding: 2%;
+}
 
 .header {
-  background-color: #ffbba8; }
+  background-color: #ffbba8;
+}
 
 .img-fluid {
-  max-width: 50%; }
+  max-width: 50%;
+}
 
 .logo {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .jumbotron {
   background-color: #ffbba8;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+}
 
 .py-7 {
-  padding-top: 2rem; }
+  padding-top: 2rem;
+}
 
 .btn-color {
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+}
 
 .cursos {
-  background-color: #ebdece70;
-  margin: 5% 0%; }
+  background-color: rgba(235, 222, 206, 0.4392156863);
+  margin: 5% 0%;
+}
 
 footer {
-  background-color: #ffbba8; }
+  background-color: #ffbba8;
+}
 
 .padding-icon {
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 .form-control {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 .element-right {
-  float: right; }
+  float: right;
+}
 
 .content-aling-top {
   padding-bottom: 0px;
-  padding-top: 50px; }
+  padding-top: 50px;
+}
 
 .float-whatsapp {
   position: fixed;
@@ -97,13 +122,25 @@ footer {
   right: 30px;
   width: 80px;
   height: 80px;
-  z-index: 99; }
+  z-index: 99;
+}
 
 .carosel-center {
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+}
 
 .text-color {
-  color: #ffffff; }
+  color: #fff;
+}
 
 .padding-top {
-  padding-top: 10%; }
+  padding-top: 10%;
+}
+
+.cero {
+  transition: 0.3s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=maquillajes.css.map */

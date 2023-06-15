@@ -50,8 +50,8 @@
         <section>
             <div class="container">
                 <div class="row d-flex flex-wrap justify-content-between">
-                    <div class="card shadow col-md-12 mb-4 mb-md-6 d-flex flex-column justify-content-between padding-top" id="autoMaquillaje_Basico">
-                        <div class="card-body row d-flex justify-content-center">
+                    <div class="card shadow col-md-12 mb-4 mb-md-6 d-flex flex-column justify-content-between padding-top " id="autoMaquillaje_Basico">
+                        <div class="card-body row d-flex justify-content-center flex-wrap ">
                             <div class="col-md-6 d-flex flex-wrap align-content-center">
                                 <h4>Auto maquillaje básico</h4>
                                 <p class="lead text-muted">Aprenderas las técnicas básicas de maquillaje que le faborecen a tu tipo de rostro, duración 4 horas.</p>
@@ -114,59 +114,17 @@
             </div>
         </section>
         <section class="float-whatsapp" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tu cita " id="citas ">
-            <div class="fa-3x text-center bg-success rounded-circle">
-                <a href="https://wa.me/+573157223969?text=Hola deseo agendar una cita" target="_blank"><i class="fab fa-whatsapp text-white fb"></i></a>
+            <div class="">
+                <a href="https://wa.me/+573157223969?text=Hola deseo agendar una cita" target="_blank"><img src="../imagenesUtilizadas/whatsapp.svg" alt=""></a>
             </div>
         </section>
         <footer class="main-footer justify-content-end padding-top" id="footer">
-            <div class="container mb-5">
-                <h2>Comentarios</h2>
-                <table class="table py-2">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Comentario</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Juan</td>
-                            <td>excelencia y profesionalismo la caracterisa</td>
-                        </tr>
-                        <tr>
-                            <td>Maria</td>
-                            <td>Estoy de acuerdo, es muy informativo.</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#realizarComentario" data-toggle="tooltip" title="deja tu opinion sobre la experiencia de el maquillaje con camii MakeUp">Comentar</button>
-                <div class="modal fade" id="realizarComentario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Comentario</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group"><label for="nombre">Nombre:</label> <input type="text" class="form-control" id="nombre" /></div>
-                                    <div class="form-group"><label for="comentario">Comentario:</label> <textarea class="form-control" rows="5" id="comentario"></textarea></div>
-                                </form>
-                            </div>
-                            <div class="modal-footer"><button type="button" class="btn btn-color" data-bs-dismiss="modal">Cerrar</button> <button type="button" class="btn btn-secondary">Enviar</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="d-flex flex-wrap align-items-center px-3 bg-gray-300 text-muted content-aling-top">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-sm-3 d-flex px-3 row">
                             <div class="centrar"><img class="img-fluid w-10" src="../imagenesUtilizadas/logo.png" alt="" /></div>
-                            <div class="centrar">
-                                <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-facebook"></i></a> <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-tiktok"></i></a>
-                                <a class="text-decoration-none text-black mx-1 fa-2x" href=""><i class="fa-brands fa-instagram"></i></a>
-                            </div>
+                            
                         </div>
                         <div class="col-sm-3 d-flex centrar">
                             <address>
@@ -174,20 +132,12 @@
                                 <p><i class="fa-solid fa-phone padding-icon"></i>+573235937401</p>
                             </address>
                         </div>
-                        <div class="col-sm-4 d-flex flex-column">
-                            <h6 class="text-uppercase text-dark mb-3">Contactarte</h6>
-                            <p class="mb-3">descripcion y terminos para contatarme</p>
-                            <form action="#" id="newsletter-form">
-                                <div class="form-row">
-                                    <div class="input-group mb-3 form-group">
-                                        <input type="email" name="" id="email" class="form-control bg-transparent border-secondary border-end-1" placeholder="direccion de gmail" />
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-secondary border-start-1" type="submit"><i class="fa fa-paper-plane text-lg text-dark"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+
+                        <div class="col-sm-3 d-flex centrar">
+                            <a class="text-decoration-none text-black mx-1 fa-2x" href=""><img src="../imagenesUtilizadas/facebook.svg" alt=""></a> <a class="text-decoration-none text-black mx-1 fa-2x" href=""><img src="../imagenesUtilizadas/ticktock.svg" alt=""></i></a>
+                            <a class="text-decoration-none text-black mx-1 fa-2x" href=""><img src="../imagenesUtilizadas/instagram.svg" alt=""></a>
                         </div>
+                       
                     </div>
                 </div>
             </div>
@@ -196,20 +146,6 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <script src="javaScript/Botones.js"></script>
-        <script>
-            var menuItems = document.querySelectorAll(".navbar-nav li a");
-
-            for (var i = 0; i < menuItems.length; i++) {
-                menuItems[i].addEventListener("click", function () {
-                    var navbarCollapse = document.getElementById("navbarCollapse");
-                    navbarCollapse.classList.remove("show");
-                    navbarCollapse.classList.add("shadow");
-                });
-            }
-            window.addEventListener("scroll", function () {
-                var header = document.querySelector(".header");
-                header.classList.toggle("shadow", window.scrollY > 0);
-            });
-        </script>
+        <script src="../javaScript/navar.js"></script>
     </body>
 </html>

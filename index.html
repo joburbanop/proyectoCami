@@ -238,7 +238,7 @@
                                 <p class="lead text-muted">En un dia importante debe estar segura de lucir hermosa, las preuebas de maquillaje son ideales para ver que es lo que mas te favorece.</p>
                             </div>
                             <div class="col-md-3 mb-3"><img class="card-img-top h-80 shadow" src="imagenesUtilizadas/20230110_003433.jpg" alt="" /></div>
-                            <div class="col-md-6 collapse fade" id="maquillajePrueba">
+                            <div class="col-md-6 collapse fade " id="maquillajePrueba">
                                 <h4>Incluye</h4>
                                 <p class="lead text-muted">- Maquillaje diferente en cada ojo, con el resto de maquillaje en la piel.<br /></p>
                                 <h4>No incluye</h4>
@@ -252,7 +252,11 @@
                                 <p class="lead text-muted">$ 35.000</p>
                                 <button type="button" class="btn btn-color" data-bs-toggle="modal" data-bs-target="#masInformacionAgendamiento" data-toggle="tooltip" title="informacion a tener en cuenta" target="_blank">Agendar cita</button>
                             </div>
-                            <div><button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajePrueba" aria-expanded="false" id="MasinformacionBTN4">Más Información</button></div>
+
+                            <div>
+                                <button class="btn btn-color" type="button" data-bs-toggle="collapse" data-bs-target="#maquillajePrueba" aria-expanded="false" id="MasinformacionBTN4"  >Más Información</button>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -343,23 +347,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="javaScript/Botones.js"></script>
 
-    <script>
-        var menuItems = document.querySelectorAll('.navbar-nav li a');
-        
-        for (var i = 0; i < menuItems.length; i++) {
-          menuItems[i].addEventListener('click', function () {
-            var navbarCollapse = document.getElementById('navbarCollapse');
-            navbarCollapse.classList.remove('show');
-            navbarCollapse.classList.add('shadow')
-          });
-        }
-
-        window.addEventListener('scroll', function() {
-        var header = document.querySelector('.header');
-        header.classList.toggle('shadow', window.scrollY > 0);
-        });
-
-    </script>
+    <script src="javaScript/navar.js"></script>
    
   
     </body>
